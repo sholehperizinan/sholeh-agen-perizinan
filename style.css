@@ -205,6 +205,12 @@ footer{
 .header .nav a{
   color: #fff;
 }
+.header .menu{
+  display: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* header responsive */
 @media(max-width: 800px){
   .header{
     padding: 0 2rem;
@@ -224,6 +230,9 @@ footer{
   }
   .header .nav.aktif{
     left: 0;
+  }
+  .header .menu{
+    display: block;
   }
 }
 @media(max-width: 500px){
