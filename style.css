@@ -134,6 +134,10 @@ button{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.shadow{
+  box-shadow: 0 0 16px #555;
+  padding: 1rem;
+}
 .mt-16{
   margin-top: 16px;
 }
