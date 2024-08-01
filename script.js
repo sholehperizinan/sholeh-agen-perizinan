@@ -34,7 +34,7 @@ document.addEventListener("keydown", e => {
 });
 
 
-// --------------- remove attributes ---------------
+// --------------- old remove attributes ---------------
 document.addEventListener('DOMContentLoaded', function() {
         // URL src skrip yang ingin dihapus
         var scriptToRemove = 'https://www.blogger.com/static/v1/widgets/2613211189-widgets.js';
@@ -52,4 +52,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 break; // Hentikan pencarian setelah elemen ditemukan dan dihapus
             }
         }
+    });
+
+
+// --------------- new remove attributes ---------------
+document.addEventListener('DOMContentLoaded', function() {
+        // Ambil elemen <body>
+        var body = document.body;
+
+        // Dapatkan semua anak dari elemen <body>
+        var children = body.children;
+
+        // Hitung jumlah anak
+        var numChildren = children.length;
+
+        // Jika ada dua atau lebih anak, hapus dua yang terakhir
+        if (numChildren >= 2) {
+            // Hapus anak terakhir pertama
+            body.removeChild(children[numChildren - 1]);
+
+            // Hapus anak terakhir kedua (setelah anak terakhir pertama dihapus)
+            body.removeChild(children[numChildren - 2]);
+        } else if (numChildren === 1) {
+            // Jika hanya ada satu anak, hapus anak terakhir
+            body.removeChild(children[numChildren - 1]);
+        }
+
+        console.log('Dua elemen anak terakhir dari body telah dihapus.');
     });
