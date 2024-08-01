@@ -144,6 +144,11 @@ button{
   border: 1px solid rgba(0,0,0,5%);
   border-radius: 4px;
 }
+.container::after{
+  display: none!important;
+  clear: none!important;
+  content: none!important;
+}
 .mt-16{
   margin-top: 16px;
 }
