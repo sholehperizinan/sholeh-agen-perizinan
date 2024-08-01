@@ -158,6 +158,9 @@ button{
 .mr-8{
   margin-right: 8px;
 }
+.fs-64{
+  font-size: 64px;
+}
 /*root responsive*/
 section,
 main,
@@ -253,6 +256,12 @@ footer{
 /* ------------------------- main article ------------------------- */
 .article{
   margin-top: 60px;
+}
+/* article hero*/
+.article .hero .container .box img{
+  max-width: 400px;
+  height: auto;
+  margin: auto;
 }
 
 /* ------------------------- footer ------------------------- */
