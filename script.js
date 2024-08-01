@@ -3,7 +3,7 @@ window.addEventListener("click", e => {
     const menu = document.querySelector(".menu");
     const nav = document.querySelector(".nav");
 
-    if (e == menu) {
+    if (e.target == menu) {
         nav.classList.toggle("aktif");
         if( nav.classList.contains("aktif") ){
             console.log(menu.className);
