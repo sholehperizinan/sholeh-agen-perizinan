@@ -1,3 +1,19 @@
+// --------------- navbar ---------------
+window.addEventListener("click", e => {
+    const menu = document.querySelector(".menu");
+    const nav = document.querySelector(".nav");
+
+    if (e == menu) {
+        nav.classList.toggle("aktif");
+        if( nav.classList.contains("aktif") ){
+            console.log(menu.className);
+        }
+    }
+    else{
+        nav.classList.remove("aktif");
+    }
+})
+
 // --------------- lazy loads ---------------
 const images = document.querySelectorAll("img");
 images.forEach(function(image) {
