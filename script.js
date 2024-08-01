@@ -4,9 +4,11 @@ images.forEach(function(image) {
 	image.setAttribute("loading", "lazy");
 });
 
+
 // --------------- footer credit ---------------
 const tahun = new Date().getFullYear();
 document.querySelector(".tahun").innerHTML = tahun;
+
 
 // --------------- border-radius btn ---------------
 const btn = document.querySelectorAll(".btn");
@@ -14,6 +16,7 @@ btn.forEach(b => {
 	btnHeight = b.offsetHeight;
 	b.style.borderRadius = `${btnHeight}px`;
 });
+
 
 // --------------- anti cheats ---------------
 document.addEventListener("contextmenu", e => {
@@ -29,16 +32,6 @@ document.addEventListener("keydown", e => {
 		e.preventDefault();
 	};
 });
-
-
-
-
-
-
-
-
-
-
 
 
 // --------------- remove attributes ---------------
