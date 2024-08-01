@@ -6,11 +6,16 @@ window.addEventListener("click", e => {
     if (e.target == menu) {
         nav.classList.toggle("aktif");
         if( nav.classList.contains("aktif") ){
-            console.log(menu.className);
+            // console.log(menu.className);
+            menu.className = "menu fas fa-times";
+        }
+        else{
+            menu.className = "menu fas fa-bars";
         }
     }
     else{
         nav.classList.remove("aktif");
+        menu.className = "menu fas fa-bars";
     }
 })
 
