@@ -97,6 +97,9 @@ button{
   flex-direction: column;
   gap: 1.5rem;
 }
+.center-text{
+  text-align: center;
+}
 .btn{
   display: inline-block;
   border: 1px solid navy;
