@@ -103,7 +103,7 @@ button{
 }
 .btn{
   display: inline-block;
-  border: 1px solid navy;
+  border: 1px solid rgba(000080,000080,000080,75%);
   color: navy;
   cursor: pointer;
   background: none;
