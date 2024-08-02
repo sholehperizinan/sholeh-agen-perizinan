@@ -172,6 +172,9 @@ button{
   font-size: 64px;
   color: slateblue;
 }
+.fs-24{
+  font-size: 24px;
+}
 /*root responsive*/
 section,
 main,
