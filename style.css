@@ -288,7 +288,7 @@ footer{
 }
 /* article faq */
 .article .faq .container .content .item h3{
-  line-height: 0;
+  line-height: 30px;
 }
 /* article kontak */
 .article .kontak .container .content .item iframe{
