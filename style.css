@@ -303,3 +303,20 @@ footer{
   background: navy;
   color: #fff;
 }
+.footer .container .box:first-child{
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,10%);
+}
+.footer .container .box:first-child img{
+  max-width: 100px;
+  max-height: 100px;
+}
+.footer .container .box:first-child p{
+  max-width: 350px;
+}
+.footer .container .box:last-child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
