@@ -2,17 +2,13 @@
   font-family: 'Dosis', sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
   list-style: none;
   -webkit-tap-highlight-color: transparent !important;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   letter-spacing: 1px;
   word-spacing: 6px;
 }
@@ -84,34 +80,20 @@ button{
   margin-top: 24px;
 }
 .grid{
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.5rem;
 }
 .flex-center{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 .flex-down{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   gap: 1.5rem;
 }
 .center-text{
@@ -125,10 +107,7 @@ button{
   cursor: pointer;
   padding: 8px 16px;
   font-size: 16px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .btn:hover{
   background: navy;
@@ -216,7 +195,6 @@ footer{
     padding: 3rem 1rem;
   }
   .grid{
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
@@ -227,21 +205,13 @@ footer{
   position: fixed;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: navy;
   width: 100%;
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 16px;
 }
 .header .logo{
@@ -249,15 +219,9 @@ footer{
   font-weight: bold;
 }
 .header .nav{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   gap: 16px;
 }
 .header .nav a{
@@ -278,18 +242,10 @@ footer{
     position: absolute;
     top: 60px;
     left: -500px;
-    -webkit-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     background: navy;
     width: 100%;
     max-width: 350px;
@@ -354,26 +310,19 @@ footer{
   color: #fff;
 }
 .footer .container .box{
-  max-width: 350px;
+  max-width: 500px;
   margin: auto;
 }
 .footer .container .box img{
   max-width: 100px;
   max-height: 100px;
   margin: auto;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 .footer .container .box .medsos{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
 }
 .footer .container .box .medsos a{
