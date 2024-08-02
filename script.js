@@ -53,3 +53,24 @@ document.addEventListener("keydown", e => {
 		e.preventDefault();
 	};
 });
+
+
+// --------------- remove blogger script ---------------
+document.addEventListener('DOMContentLoaded', function() {
+    var scriptToRemove1 = 'https://www.blogger.com/static/v1/widgets/2061172683-widgets.js';
+    var scripts = document.getElementsByTagName('script');
+    
+    for (var i = 0; i < scripts.length; i++) {
+        if (scripts[i].getAttribute('src') === scriptToRemove1) {
+            scripts[i].parentNode.removeChild(scripts[i]);
+        }
+    }
+    
+    var scriptsToRemove2 = document.querySelectorAll('script');
+    scriptsToRemove2.forEach(function(script) {
+        var scriptContent = script.textContent || script.innerText;
+        if (scriptContent.includes('window[\'__wavt\']') && scriptContent.includes('_WidgetManager._Init')) {
+            script.parentNode.removeChild(script);
+        }
+    });
+});
