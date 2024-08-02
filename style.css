@@ -324,6 +324,15 @@ footer{
   margin: auto;
   filter: invert(1);
 }
+.footer .container .box:first-child .medsos{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+.footer .container .box:first-child .medsos a{
+  color: #fff;
+}
 .footer .container .box:last-child{
   border-top: 1px solid rgba(255,255,255,10%);
   margin-top: 3rem;
@@ -331,13 +340,4 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.footer .container .box:last-child .medsos{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 16px;
-}
-.footer .container .box:last-child .medsos a{
-  color: #fff;
 }
