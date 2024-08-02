@@ -13,8 +13,7 @@
   word-spacing: 6px;
 }
 :root{
-  --gradient: linear-gradient(180deg, red, green);
-  --box-shadow: 0 4px 16px rgba(0,0,0,.25);
+  --gradient: linear-gradient(180deg, royalblue, slateblue);;
 }
 html{
   overflow-x: hidden;
@@ -47,7 +46,6 @@ h3,
 .alt-h3{
   font-size: 24px;
   line-height: 34px;
-  color: royalblue;
 }
 h4{
   font-size: 20px;
