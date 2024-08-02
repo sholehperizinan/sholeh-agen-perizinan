@@ -101,17 +101,16 @@ button{
 }
 .btn{
   display: inline-block;
-  border: 1px solid rgba(000080,000080,000080,75%);
-  color: navy;
+  border: 1px solid slateblue;
+  background: var(--gradient);
+  color: #fff;
   cursor: pointer;
-  background: none;
   padding: 8px 16px;
   font-size: 16px;
   user-select: none;
 }
 .btn:hover{
   background: navy;
-  color: #fff;
 }
 .parallax{
   width: 100%;
